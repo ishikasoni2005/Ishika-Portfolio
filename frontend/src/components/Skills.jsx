@@ -11,29 +11,41 @@ import {
   SiLinux,
   SiMongodb,
   SiMysql,
-  SiNodedotjs,
+  SiPostgresql,
+  SiPostman,
   SiPython,
   SiReact,
-  SiTailwindcss
+  SiRedis,
+  SiTailwindcss,
+  SiVite
 } from "react-icons/si";
+import { FaJava } from "react-icons/fa";
 import { TbApi } from "react-icons/tb";
 import { skillGroups } from "../data/skills";
 
 const iconMap = {
-  "C++": SiCplusplus,
   Python: SiPython,
+  "C++": SiCplusplus,
+  Java: FaJava,
   JavaScript: SiJavascript,
   React: SiReact,
+  Vite: SiVite,
   HTML: SiHtml5,
   CSS: SiCss,
-  Tailwind: SiTailwindcss,
-  "Node.js": SiNodedotjs,
+  TailwindCSS: SiTailwindcss,
   Django: SiDjango,
+  "Django REST Framework": TbApi,
+  "Django Channels": TbApi,
   "REST APIs": TbApi,
+  WebSockets: TbApi,
+  Celery: TbApi,
   MongoDB: SiMongodb,
   MySQL: SiMysql,
+  PostgreSQL: SiPostgresql,
+  Redis: SiRedis,
   Git: SiGit,
   GitHub: SiGithub,
+  Postman: SiPostman,
   Docker: SiDocker,
   Linux: SiLinux
 };
@@ -45,7 +57,7 @@ export default function Skills() {
         <span className="section-label">Skills</span>
         <h2 className="section-title">A balanced skill set across product development and engineering fundamentals.</h2>
         <p className="section-copy">
-          I enjoy working across the stack, from responsive interfaces to backend services and the tooling that helps teams ship faster.
+          My strongest work sits around React interfaces, Django backends, data-driven features, and the tooling that helps teams build with more confidence.
         </p>
       </div>
 

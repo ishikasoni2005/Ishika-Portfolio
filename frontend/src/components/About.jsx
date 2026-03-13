@@ -5,35 +5,38 @@ const highlights = [
   {
     icon: FiBookOpen,
     title: "Education",
-    text: "Computer Science student focused on data structures, operating systems, and software engineering fundamentals."
+    text: "B.Tech student in CSE (AI & Data Science) at CGC University, Mohali with an 8.6 CGPA and a strong base in CS fundamentals."
   },
   {
     icon: FiCode,
-    title: "Passion for Coding",
-    text: "I enjoy turning complex ideas into elegant products, especially when frontend polish meets reliable backend architecture."
+    title: "Full Stack Builds",
+    text: "I enjoy pairing polished React interfaces with Django APIs, real-time backends, and data flows that stay maintainable as projects grow."
   },
   {
     icon: FiFlag,
-    title: "Career Goal",
-    text: "I am intentionally building a recruiter-ready portfolio to prepare for Software Engineering roles at high-impact companies, including FAANG."
+    title: "Problem Solving",
+    text: "I have solved 500+ DSA problems across LeetCode and GeeksforGeeks to keep sharpening logic, speed, and coding discipline."
   },
   {
     icon: FiStar,
-    title: "Tech I Enjoy",
-    text: "React, TailwindCSS, Node.js, Django, REST APIs, MongoDB, MySQL, and everything around developer productivity."
+    title: "What I Care About",
+    text: "Clear communication, reliable implementation, measurable improvement, and building products that feel thoughtful from backend to UI."
   }
 ];
 
 const technologies = [
-  "React",
+  "React.js",
+  "Vite",
   "TailwindCSS",
-  "Framer Motion",
-  "Node.js",
-  "Django",
-  "MongoDB",
+  "Django REST Framework",
+  "Django Channels",
+  "WebSockets",
+  "WebRTC",
   "MySQL",
+  "PostgreSQL",
+  "Redis",
+  "MongoDB",
   "Docker",
-  "Linux",
   "GitHub"
 ];
 
@@ -44,15 +47,15 @@ export default function About() {
         <span className="section-label">About Me</span>
         <div className="flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
           <div className="space-y-4">
-            <h2 className="section-title">A student developer preparing for ambitious engineering teams.</h2>
+            <h2 className="section-title">A student engineer building real products and stronger fundamentals each semester.</h2>
             <p className="section-copy">
-              I am a Computer Science student who loves building products that feel thoughtful, fast, and useful. My work sits at the intersection of software engineering, UI craftsmanship, and real-world problem solving.
+              I am a full stack software engineering student who likes products that are fast, useful, and technically sound. Most of my work lives where responsive frontend experiences meet reliable backend systems.
             </p>
           </div>
           <div className="glass-panel max-w-md p-5">
             <p className="text-sm font-semibold text-text">What matters to me</p>
             <p className="mt-2 text-sm leading-7 text-muted">
-              Writing maintainable code, learning quickly, collaborating well, and staying curious enough to keep improving every project.
+              Writing maintainable code, improving with feedback, and treating every project like a chance to get better at real engineering work.
             </p>
           </div>
         </div>
@@ -93,7 +96,7 @@ export default function About() {
             <h3 className="mt-3 text-2xl font-semibold text-text">Tools I reach for when building meaningful products</h3>
           </div>
           <p className="max-w-2xl text-sm leading-7 text-muted">
-            I especially enjoy frontend architecture and full stack workflows where thoughtful interfaces, backend reliability, and product sense all need to come together.
+            I especially enjoy full stack workflows where frontend polish, backend reliability, and product thinking all need to move together cleanly.
           </p>
         </div>
 
@@ -108,4 +111,3 @@ export default function About() {
     </section>
   );
 }
-

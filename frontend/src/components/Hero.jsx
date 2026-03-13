@@ -1,24 +1,14 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { FiArrowRight, FiDownload, FiGithub, FiLayers, FiLinkedin, FiTarget, FiTwitter } from "react-icons/fi";
+import { FiArrowRight, FiDownload, FiGithub, FiLayers, FiLinkedin, FiTarget } from "react-icons/fi";
+import { SiLeetcode } from "react-icons/si";
+import { heroRotatingLines, heroStats, socialLinks } from "../data/profile";
 
-const rotatingLines = [
-  "scalable full stack products.",
-  "AI-assisted developer tools.",
-  "clean interfaces with strong UX."
-];
-
-const stats = [
-  { label: "Projects Built", value: "15+" },
-  { label: "Hackathons", value: "4" },
-  { label: "Certifications", value: "3+" }
-];
-
-const socialLinks = [
-  { label: "GitHub", href: "https://github.com/your-username", icon: FiGithub },
-  { label: "LinkedIn", href: "https://linkedin.com/in/your-profile", icon: FiLinkedin },
-  { label: "Twitter", href: "https://twitter.com/your-handle", icon: FiTwitter }
-];
+const socialIconMap = {
+  github: FiGithub,
+  linkedin: FiLinkedin,
+  leetcode: SiLeetcode
+};
 
 export default function Hero() {
   const [wordIndex, setWordIndex] = useState(0);
@@ -26,8 +16,7 @@ export default function Hero() {
   const [isDeleting, setIsDeleting] = useState(false);
 
   useEffect(() => {
-    // Small typewriter loop without pulling in an extra dependency.
-    const currentLine = rotatingLines[wordIndex];
+    const currentLine = heroRotatingLines[wordIndex];
     const isComplete = typedText === currentLine;
     const isErased = typedText.length === 0;
 
@@ -49,7 +38,7 @@ export default function Hero() {
         }
 
         setIsDeleting(false);
-        setWordIndex((currentValue) => (currentValue + 1) % rotatingLines.length);
+        setWordIndex((currentValue) => (currentValue + 1) % heroRotatingLines.length);
       },
       isDeleting ? 45 : isComplete ? 1500 : 90
     );
@@ -67,15 +56,16 @@ export default function Hero() {
           className="space-y-8"
         >
           <div className="space-y-5">
-            <span className="section-label">Computer Science Student</span>
+            <span className="section-label">B.Tech CSE (AI & Data Science) | CGC University</span>
             <h1 className="max-w-3xl text-4xl font-bold leading-tight tracking-tight text-text sm:text-5xl lg:text-6xl">
-              Ishika, building toward a future as a{" "}
+              Ishika, building{" "}
               <span className="bg-gradient-to-r from-accent to-accent-soft bg-clip-text text-transparent">
-                Software Engineer
-              </span>
+                full stack products
+              </span>{" "}
+              with stronger engineering fundamentals every semester
             </h1>
             <p className="max-w-2xl text-lg leading-8 text-muted sm:text-xl">
-              Aspiring Software Engineer focused on full stack development, clean system design, and ambitious products that stand out in recruiter interviews.
+              Full stack software engineering student focused on scalable web applications, real-time systems, and product experiences that feel polished end to end.
             </p>
             <div className="flex min-h-[2rem] items-center text-base font-semibold text-accent sm:text-lg">
               I enjoy building&nbsp;
@@ -98,23 +88,27 @@ export default function Hero() {
           </div>
 
           <div className="flex flex-wrap gap-3">
-            {socialLinks.map(({ label, href, icon: Icon }) => (
-              <a
-                key={label}
-                href={href}
-                target="_blank"
-                rel="noreferrer"
-                className="social-chip"
-                aria-label={label}
-              >
-                <Icon size={16} />
-                {label}
-              </a>
-            ))}
+            {socialLinks.map(({ key, label, href }) => {
+              const Icon = socialIconMap[key];
+
+              return (
+                <a
+                  key={label}
+                  href={href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="social-chip"
+                  aria-label={label}
+                >
+                  <Icon size={16} />
+                  {label}
+                </a>
+              );
+            })}
           </div>
 
           <div className="grid gap-4 sm:grid-cols-3">
-            {stats.map((stat) => (
+            {heroStats.map((stat) => (
               <motion.div
                 key={stat.label}
                 whileHover={{ y: -4 }}
@@ -153,16 +147,16 @@ export default function Hero() {
                     <div>
                       <p className="font-semibold text-white">Full Stack Focus</p>
                       <p className="text-slate-300">
-                        Shipping polished React frontends backed by reliable APIs and databases.
+                        Shipping polished React frontends backed by Django APIs, data stores, and dependable state handling.
                       </p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3 rounded-2xl border border-white/10 bg-white/5 p-4">
                     <FiTarget className="mt-1 text-teal-300" size={18} />
                     <div>
-                      <p className="font-semibold text-white">Career Goal</p>
+                      <p className="font-semibold text-white">Career Direction</p>
                       <p className="text-slate-300">
-                        Building the depth, problem-solving, and portfolio quality expected by FAANG recruiters.
+                        Growing through internships, stronger systems work, and the kind of execution high-impact engineering teams value.
                       </p>
                     </div>
                   </div>
@@ -173,13 +167,13 @@ export default function Hero() {
                 <div className="glass-panel animate-float p-5">
                   <p className="text-sm font-semibold text-text">Preferred Stack</p>
                   <p className="mt-2 text-sm leading-7 text-muted">
-                    React, TailwindCSS, Node.js, Django, REST APIs, Docker
+                    React, Vite, TailwindCSS, Django REST Framework, Channels, MySQL, Redis
                   </p>
                 </div>
                 <div className="glass-panel p-5">
                   <p className="text-sm font-semibold text-text">Engineering Mindset</p>
                   <p className="mt-2 text-sm leading-7 text-muted">
-                    Clean UI, measurable performance, maintainable architecture, and thoughtful product execution.
+                    Clean UI, measurable improvements, maintainable backend systems, and thoughtful execution across the stack.
                   </p>
                 </div>
               </div>
@@ -190,4 +184,3 @@ export default function Hero() {
     </section>
   );
 }
-

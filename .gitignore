@@ -4,4 +4,9 @@ dist
 .env
 .env.local
 .env.production
-
+.resume-preview
+frontend/dist
+backend/.env
+backend/.venv
+backend/db.sqlite3
+__pycache__

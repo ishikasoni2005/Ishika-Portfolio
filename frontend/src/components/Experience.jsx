@@ -4,50 +4,50 @@ import { LuBadgeCheck, LuFolderGit2, LuGitPullRequest, LuTrophy } from "react-ic
 const achievements = [
   {
     icon: LuTrophy,
-    title: "Hackathons",
-    stat: "4+",
-    text: "Built rapid prototypes, collaborated under time pressure, and learned how to ship clear demos fast."
+    title: "Academic Rank",
+    stat: "Top 5%",
+    text: "Ranked among the top 5% of students in the department based on cumulative academic performance."
   },
   {
     icon: LuFolderGit2,
     title: "Projects Built",
-    stat: "15+",
-    text: "From dashboards to AI tools, I keep building projects that show problem-solving depth and polish."
+    stat: "11",
+    text: "Built public projects spanning frontend, full stack, analytics, algorithms, AI-powered systems, and hardware prototypes."
   },
   {
     icon: LuBadgeCheck,
     title: "Certifications",
-    stat: "3+",
-    text: "Continuously strengthening fundamentals in web development, APIs, and software engineering workflows."
+    stat: "5",
+    text: "Earned certifications across Data Engineering, Generative AI, Artificial Intelligence, IT, and professional skills."
   },
   {
     icon: LuGitPullRequest,
-    title: "Open Source",
-    stat: "Ongoing",
-    text: "Contributing to repositories, documentation, and issue discussions to grow as a collaborative engineer."
+    title: "DSA Practice",
+    stat: "500+",
+    text: "Solved 500+ problems on LeetCode and GeeksforGeeks to strengthen algorithmic thinking and coding efficiency."
   }
 ];
 
 const milestones = [
   {
     year: "2023",
-    title: "Built a stronger DSA and problem-solving routine",
-    description: "Focused on C++, interview patterns, and writing cleaner, more structured solutions."
+    title: "Built a strong academic and coding foundation",
+    description: "Started B.Tech in CSE (AI & Data Science), strengthened fundamentals, and built a steady DSA routine."
   },
   {
     year: "2024",
     title: "Shifted into full stack project building",
-    description: "Started building portfolio-grade apps with React, Django, Node.js, APIs, and modern UI systems."
+    description: "Moved from small experiments to structured React and Django projects with cleaner architecture."
   },
   {
     year: "2025",
-    title: "Expanded into AI and developer productivity projects",
-    description: "Explored applied ML ideas, intelligent workflows, and products that solve student-facing problems."
+    title: "Expanded into internships, APIs, and AI workflows",
+    description: "Worked on IPO backend systems during internship and built AI, analytics, and real-time products."
   },
   {
     year: "2026",
-    title: "Preparing for software engineering internships and top-tier roles",
-    description: "Refining system design knowledge, portfolio quality, and recruiter-facing storytelling."
+    title: "Sharpening real-time and product-focused engineering",
+    description: "Doubling down on stronger systems thinking, polished case studies, and production-style execution."
   }
 ];
 
@@ -56,9 +56,9 @@ export default function Experience() {
     <section id="experience" className="section-shell">
       <div className="mb-12 space-y-5">
         <span className="section-label">Experience & Achievements</span>
-        <h2 className="section-title">Momentum built through hands-on projects, competitions, and continuous learning.</h2>
+        <h2 className="section-title">Momentum built through internship work, shipped projects, and steady practice.</h2>
         <p className="section-copy">
-          Even as a student, I treat every project like a serious product exercise: clear problem, strong execution, and measurable growth from one build to the next.
+          I try to make every semester visible in the work: better systems, cleaner interfaces, stronger fundamentals, and more confidence shipping end-to-end products.
         </p>
       </div>
 
@@ -92,15 +92,16 @@ export default function Experience() {
           className="glass-panel p-6 sm:p-8"
         >
           <p className="text-sm font-semibold uppercase tracking-[0.25em] text-accent">
-            Current Focus
+            Internship Snapshot
           </p>
-          <h3 className="mt-3 text-2xl font-semibold text-text">What I am sharpening right now</h3>
+          <h3 className="mt-3 text-2xl font-semibold text-text">Bluestock | SDE Intern</h3>
+          <p className="mt-2 text-sm font-medium text-muted">July 2025 to August 2025 · Remote</p>
           <div className="mt-6 space-y-4">
             {[
-              "Writing cleaner, more scalable React components",
-              "Improving backend API design and authentication flows",
-              "Practicing data structures and interview-style problem solving",
-              "Building project case studies that speak clearly to recruiters"
+              "Engineered a Django and MySQL backend for IPO management that handled 1000+ IPO records.",
+              "Designed and implemented 15+ RESTful APIs used by a React frontend for filtering, pagination, and structured responses.",
+              "Optimized Django ORM queries and indexing to reduce API response time by 35%.",
+              "Worked in a Git-based team workflow while maintaining code quality across multiple contributors."
             ].map((item) => (
               <div key={item} className="flex items-start gap-3 rounded-2xl border border-border/70 bg-surface-alt/70 p-4">
                 <span className="mt-1 h-2.5 w-2.5 rounded-full bg-accent" />
@@ -141,4 +142,3 @@ export default function Experience() {
     </section>
   );
 }
-
