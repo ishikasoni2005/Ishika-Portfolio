@@ -1,0 +1,15 @@
+<svg width="800" height="520" viewBox="0 0 800 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="520" rx="28" fill="#0D1422"/>
+  <circle cx="655" cy="110" r="110" fill="#38BDF8" fill-opacity="0.16"/>
+  <rect x="54" y="56" width="692" height="408" rx="30" fill="#111827" stroke="#1E3A8A"/>
+  <circle cx="154" cy="174" r="16" fill="#F8FAFC"/>
+  <circle cx="266" cy="118" r="16" fill="#F8FAFC"/>
+  <circle cx="392" cy="174" r="16" fill="#F8FAFC"/>
+  <circle cx="546" cy="132" r="16" fill="#F8FAFC"/>
+  <circle cx="650" cy="212" r="16" fill="#F8FAFC"/>
+  <circle cx="234" cy="360" r="16" fill="#F8FAFC"/>
+  <circle cx="408" cy="338" r="16" fill="#F8FAFC"/>
+  <circle cx="580" cy="346" r="16" fill="#F8FAFC"/>
+  <path d="M154 174L266 118L392 174L546 132L650 212L580 346L408 338L234 360L154 174Z" stroke="#38BDF8" stroke-width="10" stroke-linejoin="round"/>
+  <text x="94" y="450" fill="#E0F2FE" font-family="Space Grotesk, Arial" font-size="38" font-weight="700">TSP Visual Solver</text>
+</svg>

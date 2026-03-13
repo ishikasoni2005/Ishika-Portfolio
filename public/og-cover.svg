@@ -1,0 +1,20 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#020617"/>
+  <circle cx="969" cy="116" r="172" fill="#0EA5E9" fill-opacity="0.18"/>
+  <circle cx="182" cy="502" r="140" fill="#14B8A6" fill-opacity="0.14"/>
+  <rect x="79" y="82" width="1042" height="466" rx="36" fill="#0F172A" stroke="#334155"/>
+  <text x="124" y="236" fill="#E2E8F0" font-family="Space Grotesk, Arial, sans-serif" font-size="68" font-weight="700">
+    Ishika
+  </text>
+  <text x="124" y="312" fill="#38BDF8" font-family="Manrope, Arial, sans-serif" font-size="34" font-weight="600">
+    Aspiring Software Engineer
+  </text>
+  <text x="124" y="384" fill="#94A3B8" font-family="Manrope, Arial, sans-serif" font-size="28">
+    React • Tailwind • Full Stack • AI Projects • Recruiter Ready
+  </text>
+  <rect x="124" y="431" width="214" height="62" rx="18" fill="#082F49"/>
+  <text x="154" y="472" fill="#E0F2FE" font-family="Manrope, Arial, sans-serif" font-size="24" font-weight="600">
+    portfolio.vercel.app
+  </text>
+</svg>
+

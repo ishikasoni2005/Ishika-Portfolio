@@ -1,0 +1,16 @@
+<svg width="800" height="520" viewBox="0 0 800 520" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="520" rx="28" fill="#0B1220"/>
+  <circle cx="659" cy="96" r="110" fill="#22C55E" fill-opacity="0.18"/>
+  <rect x="52" y="56" width="696" height="408" rx="30" fill="#111827" stroke="#1F2937"/>
+  <rect x="96" y="104" width="608" height="58" rx="18" fill="#1F2937"/>
+  <rect x="124" y="123" width="386" height="20" rx="10" fill="#334155"/>
+  <circle cx="628" cy="133" r="18" fill="#22C55E"/>
+  <circle cx="614" cy="265" r="82" fill="#14532D"/>
+  <circle cx="614" cy="265" r="54" fill="#86EFAC"/>
+  <line x1="561" y1="322" x2="520" y2="363" stroke="#22C55E" stroke-width="20" stroke-linecap="round"/>
+  <rect x="100" y="222" width="338" height="20" rx="10" fill="#1D4ED8"/>
+  <rect x="100" y="264" width="284" height="20" rx="10" fill="#2563EB"/>
+  <rect x="100" y="306" width="248" height="20" rx="10" fill="#3B82F6"/>
+  <text x="100" y="395" fill="#F8FAFC" font-family="Space Grotesk, Arial" font-size="38" font-weight="700">SEO Analyzer</text>
+</svg>
+
