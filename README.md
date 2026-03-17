@@ -27,7 +27,6 @@ Ishika-Portfolio/
 ```
 
 ## What Runs Where
-
 - `frontend/`: React + Vite + Tailwind portfolio UI
 - `backend/`: Django API with `GET /api/health` and `GET /api/portfolio`
 - `scripts/dev.js`: starts frontend and backend together from the repo root
