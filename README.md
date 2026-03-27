@@ -2,6 +2,7 @@
 
 This repository is organized as a small monorepo with separate `frontend/` and `backend/` folders.
 
+
 ## Structure
 
 ```text
