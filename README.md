@@ -1,9 +1,10 @@
-# Ishika Portfolio
+# 🌐 Ishika — Developer Portfolio
 
-This repository is organized as a small monorepo with separate `frontend/` and `backend/` folders.
+Personal portfolio site with a Django REST backend and a React frontend, organized as a monorepo.
 
+---
 
-## Structure
+## 📂 Structure
 
 ```text
 Ishika-Portfolio/
@@ -14,90 +15,83 @@ Ishika-Portfolio/
 │   └── requirements.txt
 ├── frontend/
 │   ├── public/
+│   │   └── resume.pdf
 │   ├── src/
 │   ├── .env.example
-│   ├── package-lock.json
-│   ├── package.json
-│   ├── postcss.config.js
 │   ├── tailwind.config.js
 │   └── vite.config.js
 ├── scripts/
 │   └── dev.js
-├── package.json
-└── README.md
+└── package.json
 ```
 
-## What Runs Where
-- `frontend/`: React + Vite + Tailwind portfolio UI
-- `backend/`: Django API with `GET /api/health` and `GET /api/portfolio`
-- `scripts/dev.js`: starts frontend and backend together from the repo root
+---
 
-## Local Development
+## 🛠️ Tech Stack
 
-Install frontend dependencies if needed:
+| Layer | Technology |
+|-------|------------|
+| Backend | Django, Django REST Framework |
+| Frontend | React, Vite, TailwindCSS |
+| Contact Form | EmailJS |
+
+### API Endpoints
+
+| Method | Endpoint | Description |
+|--------|----------|-------------|
+| GET | `/api/health` | Health check |
+| GET | `/api/portfolio` | Portfolio data |
+
+---
+
+## ⚙️ Setup
+
+Install dependencies:
 
 ```bash
-cd frontend
-npm install
-```
+# Frontend
+cd frontend && npm install
 
-Install backend dependencies if needed:
-
-```bash
+# Backend
 cd backend
 python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 ```
 
-Run both apps from the root:
+Contact form — create `frontend/.env` from `frontend/.env.example`:
 
-```bash
-npm run dev
-```
-
-Or run them separately:
-
-```bash
-npm run dev:frontend
-npm run dev:backend
-```
-
-Build the frontend:
-
-```bash
-npm run build
-```
-
-Preview the frontend build:
-
-```bash
-npm run preview
-```
-
-Run Django migrations when needed:
-
-```bash
-npm run migrate:backend
-```
-
-Run backend tests:
-
-```bash
-npm run test:backend
-```
-
-## Environment
-
-To enable the contact form, create `frontend/.env` from `frontend/.env.example` and add:
-
-```bash
+```env
 VITE_EMAILJS_SERVICE_ID=your_service_id
 VITE_EMAILJS_TEMPLATE_ID=your_template_id
 VITE_EMAILJS_PUBLIC_KEY=your_public_key
 ```
 
-## Notes
+---
 
-- Public profile and project links point to Ishika's real GitHub, LinkedIn, and LeetCode profiles.
-- The website does not show the phone number.
-- The downloadable resume lives at `frontend/public/resume.pdf`.
+## 🚀 Running
+
+```bash
+# Both together (from repo root)
+npm run dev
+
+# Separately
+npm run dev:frontend
+npm run dev:backend
+```
+
+Other commands:
+
+```bash
+npm run build              # Build frontend
+npm run preview            # Preview frontend build
+npm run migrate:backend    # Run Django migrations
+npm run test:backend       # Run backend tests
+```
+
+---
+
+## 📝 Notes
+
+- Profile links point to real GitHub, LinkedIn, and LeetCode profiles
+- Phone number not displayed publicly
+- Downloadable resume at `frontend/public/resume.pdf`
